@@ -1,31 +1,47 @@
-# SynControlServer
+# SyncControlServer
 
-Simple overview of use/purpose.
+This app is used to receive joystick input events to From SyncControlApp(androidApp).
 
 ## Description
 
 An in-depth paragraph about your project and overview of use.
 
+## Flow
+![Flow](https://github.com/GitAlison/SyncControlServer/blob/main/sync_control_flow.png)
+
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* [Sync Control Server](https://github.com/GitAlison/SyncControlServer)
+
 
 ### Installing
+```
+npm i
+```
+```
+./node_modules/.bin/electron-rebuild
+```
+
+```
+npm run start
+```
+
+
 
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Open Sync Control Server in your computer
+* Open your app in android with joystick connected
+* Insert the ip address of your Sync Control Server
+* Tap in Save and Start
 ```
 code blocks for commands
 ```
-
 ## Help
 
 Any advise for common problems or issues.
@@ -35,7 +51,7 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
+Alison Aguiar,
 
 
 
