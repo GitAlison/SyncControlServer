@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>SynControl Server</title>
+</head>
+
+<body>
+
+    <div class="window">
+        <h1 id="title">
+            Connecting to server...
+        </h1>
+        <br>
+        <p>Connect your SynControl(AndriodApp) </p> <br>
+        <p id="ip"></p>
+
+        <p id="keys" style="margin-top: 10;" ></p>
+
+    </div> 
+    </div>
+
+    <script>
+        // window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+
+    <script src="/assets/js/connect.js"></script>
+
+    <script>
+        let elIP = document.getElementById('ip');
+        let elKeys = document.getElementById('keys');
+
+        window.bridge.sendSettings((event, settings) => {
+            if (settings.ip) {
+                console.log(address)
+                address = settings.ip
+                elIP.innerHTML = `your address: <b> ${settings.ip} </b>`
+
+                Connect.start();
+            }
+        });
+
+        window.bridge.sendKeys((event, message) => {
+            elKeys.innerText = message.keys
+        });
+    </script>
+</body>
+
+</html>

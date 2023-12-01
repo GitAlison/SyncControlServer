@@ -1,0 +1,36 @@
+{
+  "name": "sync-control-server",
+  "version": "1.0.0",
+  "description": "App to connect your joystick in android to your pc",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuildElectron": "./node_modules/.bin/electron-rebuild"
+  },
+  "keywords": [
+    "PS2",
+    "DUALSOCK",
+    "GAME",
+    "WEBSOCKETS"
+  ],
+  "author": "Alison Aguiar",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "27.1.2",
+    "electron-packager": "^12.2.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "electron-shutdown-command": "0.0.8",
+    "express": "^4.16.4",
+    "express-static": "^1.2.6",
+    "express-status-monitor": "^1.2.3",
+    "mini-css-extract-plugin": "^0.5.0",
+    "path": "^0.12.7",
+    "quick-local-ip": "^1.0.7",
+    "request": "^2.88.0",
+    "robotjs": "^0.6.0",
+    "ws": "^6.1.0"
+  }
+}
