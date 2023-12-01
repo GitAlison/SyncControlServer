@@ -4,10 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>SynControl Server</title>
+    <title>Sync Control Server</title>
 </head>
 
 <body>
+
+    <div class="hero">
+        <div class="hero__title">
+            Sync Control
+        </div>
+        <div class="hero__description">
+            <h1 id="title">
+                Connecting to server...
+            </h1>
+            <br>
+            <p>Connect your Sync Control (AndriodApp) </p> <br>
+            <p id="ip"></p>
+
+            <p id="keys" style="margin-top: 10;"></p>
+        </div>
+
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
 
     <div class="window">
         <h1 id="title">
@@ -17,9 +40,9 @@
         <p>Connect your SynControl(AndriodApp) </p> <br>
         <p id="ip"></p>
 
-        <p id="keys" style="margin-top: 10;" ></p>
+        <p id="keys" style="margin-top: 10;"></p>
 
-    </div> 
+    </div>
     </div>
 
     <script>
@@ -45,9 +68,9 @@
             }
         });
 
-        window.bridge.sendKeys((event, message) => {
-            elKeys.innerText = message.keys
-        });
+        // window.bridge.sendKeys((event, message) => {
+        //     elKeys.innerText = message.keys
+        // });
     </script>
 </body>
 

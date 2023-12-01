@@ -85,14 +85,8 @@ setInterval(() => {
                 console.log('key error')
             }
         })
-        mainWindow.webContents.send('sendKeys', { keys: string });
-    } else {
-        try {
-            mainWindow.webContents.send('sendKeys', { keys: "" });
-        } catch (error) {
-
-        }
-    }
+        // mainWindow.webContents.send('sendKeys', { keys: string });
+    } 
 
 }, 50);
 
